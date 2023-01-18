@@ -1,2 +1,16 @@
 # shopping-mall
 Mono repository for the shopping mall application
+
+It has  mainly following components:
+service-gateway: This service acts as a single entry point for all the other microservices. Any external client cann access the services in this application only through this gateway, Apart from providing access control, this service can be extended to provide support for rate-limiting, load-balancing, authentication etc.
+service-registry: This service acts as a regitry to all other microservices so that service discovery becomes easier and do not require to remeber uri for all other services except them.
+product-warehouse-service: This services is responsible for any inventory action e.g,.adding//getting/updating any clothes/food items.
+order-service: Takes care of managing orders.
+
+
+App Launching Instructions:
+Run the services in the following order:
+service-registry -> launch all other microservices
+
+All services can be run by the below command
+./gradlew bootrun
