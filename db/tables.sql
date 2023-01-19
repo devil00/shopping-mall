@@ -1,3 +1,6 @@
+-- create database
+
+create database altheio;
 -- altheio.clothes_item definition
 
 CREATE TABLE `clothes_item` (
