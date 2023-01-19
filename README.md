@@ -13,7 +13,10 @@ It has  mainly following components:
 
 
 # App Launching Instructions:  
-Run the services in the following order:  
+1. Launch mysql instance or use docker image https://hub.docker.com/_/mysql. 
+2. Run the sqls to create tables db/tables.sql
+3. Run the sqls to insert data db/food_item_202301191005.sql, db/food_item_sale_country_202301191006.sql, db/clothes_item_202301191005.sql, db/food_item_sale_country_202301191006.sql.   
+4. Run the services in the following order:   
 service-registry -> launch all other microservices. 
 
 ## All services can be run by the below command. 
